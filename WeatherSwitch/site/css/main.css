@@ -1,0 +1,225 @@
+body,html {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #E0E0E0;
+  overflow-x: hidden;
+}
+
+.container {
+		display: flex;
+		flex-direction: column;
+    height: 100%;
+    width: auto;
+}
+
+.header {
+	background-color: #2196F3;
+  height: 60px;
+  width: 100%;
+  color:#FFF;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  padding:2px;
+}
+
+.menu-img {
+  padding-left: 1.2em;
+	width:auto;
+  height:36px;
+  cursor: pointer;
+}
+
+.header-text {
+	padding-left: 16px;
+  font-size: 20px;
+}
+
+.card-container {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  height: 170vh;
+  width: 80vw;
+  position: static;
+  z-index: 1
+}
+
+.card {
+  height:236px;
+  width:300px;
+  background-color: #FFF;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  position: static;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.Weather-text {
+  z-index: 2;
+  position: absolute;
+  color: #FFF;
+  align-self: center;
+  padding:20px;
+}
+
+.card-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.card-text {
+  padding-left: 2vw;
+  z-index: 1;
+  position: absolute;
+  align-self: flex-start;
+  left:50vw;
+}
+
+.card-text2 {
+  padding-left: 20vw;
+  z-index: 1;
+  position: absolute;
+  align-self: flex-start;
+  left:55vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  position: fixed;
+  background-color: #FFF;
+  left:-300px;
+  top:0px;
+  height:100%;
+  width:80%;
+  padding-top:0;
+  padding-left:0;
+  padding-right:0;
+  box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.23);
+  border-right: solid #95989A 1px;
+}
+
+.menuAnimation {
+  animation: menu 0.15s 1;
+  animation-fill-mode: forwards;
+}
+
+.menutext {
+  position: absolute;
+  z-index: 3;
+  top:12vh;
+  padding-left: 20px;
+  color:#FFF;
+}
+
+.menutext2 {
+  position: absolute;
+  z-index: 3;
+  top:15vh;
+  padding-left: 20px;
+  color:#FFF;
+}
+
+.menu a {
+  text-decoration: none;
+  top:20vh;
+  padding-left: 20px;
+  padding-top: 30px;
+  color:#000;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.coverphoto {
+  position:absolute;
+  width:100%;
+  height:145.4px;
+  padding: 0;
+  top:0;
+  z-index: 2;
+}
+
+.account {
+  position: absolute;
+  z-index: 3;
+  width:50px;
+  height: 50px;
+  top:4.5vh;
+  padding-left: 20px;
+}
+
+.boxline {
+  border-bottom: solid #95989A 1px;
+  width:100%;
+  height:200px;
+}
+
+.shade {
+  position: absolute;
+  width:20%;
+  height:100%;
+  left:80%;
+  top:-100%;
+  z-index: 2;
+}
+
+.shadeAnimation {
+  animation: shade 0s 1;
+  animation-fill-mode: forwards;
+}
+
+.mode-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mode {
+  margin-top: 10vh;
+}
+
+@keyframes menu {
+  from {
+    left:-300px;
+  }
+  to {
+    left:0px;
+  }
+}
+
+@keyframes shade {
+  from {
+    top:-100%;
+  }
+  to {
+    top:0%;
+  }
+}
+
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+}
+
+@media screen
+  and (device-width: 360px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
