@@ -15,8 +15,8 @@
         <img class="account" src="img/account.svg"> </img>
         <img class="coverphoto" src="img/cover.jpg">
           <a href="./index.html">Home</a>
-          <a href="./recently_found.html">Degrees</a>
-          <a href="./recently_teleported.html">Auction</a>
+          <a href="./degrees.html">Degrees</a>
+          <a href="./auction.html">Auction</a>
           <div class="boxline">
           </div>
       </div>
@@ -26,11 +26,27 @@
       <h2 class="header-text"> Weather Switch </h2>
 		</div>
     <div class="mode-row">
-    <img class="mode" src="img/person.svg" width="150" height="150"></img>
-    <h3> Personal mode </h3>
-    <img class="mode" src="img/area.png" width="150" height="150"></img>
-    <h3> Area mode </h3>
-  </div>
+      <div class="confirm displaynone">
+        <h3 class="confirm-text"> Change weather? </h3>
+        <h3 class="confirm-text"> Personal mode 1 m^2 </h3>
+        <div class="confirm-row">
+        <a href="./index.html"> <h3 class="confirm-text"> Confirm  </h3> </a>
+        <a href="#">  <h3 class="confirm-text" onclick="confirmWeather()"> Cancel </h3> </a>
+        </div>
+      </div>
+      <div class="confirm-area displaynone">
+        <h3 class="confirm-text"> Change weather? </h3>
+        <h3 class="confirm-text"> Area mode 1 m^2 </h3>
+        <div class="confirm-row">
+        <a href="./index.html"> <h3 class="confirm-text"> Confirm  </h3> </a>
+        <a href="#">  <h3 class="confirm-text" onclick="confirmareaWeather()"> Cancel </h3> </a>
+        </div>
+      </div>
+      <img class="mode" src="img/person.svg" width="150" height="150" onclick="removeConfirm()"></img>
+      <h3 onclick="removeConfirm()"> Personal mode </h3>
+      <img class="mode" src="img/area.png" width="150" height="150" onclick="removeareaConfirm()"></img>
+      <h3 onclick="removeareaConfirm()"> Area mode </h3>
+    </div>
   </div>
 	<script src="./js/main.js"> </script>
 </body>
