@@ -23,3 +23,7 @@ function removeareaConfirm() {
 function confirmareaWeather() {
   document.querySelector(".confirm-area").classList.toggle("displaynone");
 }
+
+function reload() {
+  location.reload();
+}
