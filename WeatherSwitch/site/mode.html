@@ -16,7 +16,6 @@
         <img class="coverphoto" src="img/cover.jpg">
           <a href="./index.html">Home</a>
           <a href="./degrees.html">Degrees</a>
-          <a href="./auction.html">Auction</a>
           <div class="boxline">
           </div>
       </div>
@@ -24,6 +23,7 @@
   	<div class="header">
 			<img class="menu-img" src="img/menu.svg" onclick="menuAnimation()"> </img>
       <h2 class="header-text"> Weather Switch </h2>
+			<img class="fullscreen-img" src="img/fullscreen.svg" onclick="toggleFullScreen()"> </img>
 		</div>
     <div class="mode-row">
       <div class="confirm displaynone">
@@ -32,14 +32,6 @@
         <div class="confirm-row">
         <a href="./index.html"> <h3 class="confirm-text"> Confirm  </h3> </a>
         <a href="#">  <h3 class="confirm-text" onclick="confirmWeather()"> Cancel </h3> </a>
-        </div>
-      </div>
-      <div class="confirm-area displaynone">
-        <h3 class="confirm-text"> Change weather? </h3>
-        <h3 class="confirm-text"> Area mode x m^2 </h3>
-        <div class="confirm-row">
-        <a href="./index.html"> <h3 class="confirm-text"> Confirm  </h3> </a>
-        <a href="#">  <h3 class="confirm-text" onclick="confirmareaWeather()"> Cancel </h3> </a>
         </div>
       </div>
       <img class="mode" src="img/person.svg" width="150" height="150" onclick="removeConfirm()"></img>

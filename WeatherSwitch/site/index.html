@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<title>Weather Switch</title>
 </head>
-<body id="goFS" onload="toggleFullScreen()">
+<body onload="toggleFullScreen()">
 	<div class="container">
 		<div class="menu" style="transform: translateX(0px);">
         <h5 class="menutext"> Noel Ekbrand </h5>
@@ -16,7 +16,6 @@
         <img class="coverphoto" src="img/cover.jpg">
           <a href="./index.html">Home</a>
           <a href="./degrees.html">Degrees</a>
-          <a href="./auction.html">Auction</a>
           <div class="boxline">
           </div>
       </div>
@@ -30,7 +29,7 @@
 			<div class="card">
 				<h2 class="Weather-text"> Sunshine </h2>
 				<div class="card-text-container">
-					<a href="./auction.html" class="card-text"> Explore </a>
+					<a href="#" class="card-text"> Explore </a>
 					<a href="./mode.html" class="card-text2"> Switch </a>
 				</div>
 				<img src="img/sun.jpg" width="300" height="156"> </img>
@@ -38,7 +37,7 @@
 			<div class="card">
 				<h2 class="Weather-text"> Rain </h2>
 				<div class="card-text-container">
-					<a href="./auction.html" class="card-text"> Explore </a>
+					<a href="#" class="card-text"> Explore </a>
 					<a href="./mode.html" class="card-text2"> Switch </a>
 				</div>
 				<img src="img/rain.png" width="300" height="156"> </img>
@@ -46,7 +45,7 @@
 			<div class="card">
 				<h2 class="Weather-text"> Snow </h2>
 				<div class="card-text-container">
-					<a href="./auction.html" class="card-text"> Explore </a>
+					<a href="#" class="card-text"> Explore </a>
 					<a href="./mode.html" class="card-text2"> Switch </a>
 				</div>
 				<img src="img/snow.jpg" width="300" height="156"> </img>
@@ -54,7 +53,7 @@
 			<div class="card">
 				<h2 class="Weather-text"> Wind </h2>
 				<div class="card-text-container">
-					<a href="./auction.html" class="card-text"> Explore </a>
+					<a href="#" class="card-text"> Explore </a>
 					<a href="./mode.html" class="card-text2"> Switch </a>
 				</div>
 				<img src="img/wind.jpg" width="300" height="156"> </img>
@@ -62,12 +61,6 @@
 		</div>
 	</div>
 	</div>
-	<script>
-	  var goFS = document.getElementById("goFS");
-	  goFS.addEventListener("click", function() {
-	      document.body.requestFullscreen();
-	  }, false);
-	</script>
 	<script src="./js/main.js"> </script>
 </body>
 </html>
