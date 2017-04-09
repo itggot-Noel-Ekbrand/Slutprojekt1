@@ -7,9 +7,9 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<title>Weather Switch</title>
 </head>
-<body>
+<body id="goFS" onload="toggleFullScreen()">
 	<div class="container">
-		<div class="menu">
+		<div class="menu" style="transform: translateX(0px);">
         <h5 class="menutext"> Noel Ekbrand </h5>
         <h6 class="menutext2"> noel.ekbrand@itggot.se </h6>
         <img class="account" src="img/account.svg"> </img>
@@ -24,13 +24,14 @@
   	<div class="header">
 			<img class="menu-img" src="img/menu.svg" onclick="menuAnimation()"> </img>
       <h2 class="header-text"> Weather Switch </h2>
+			<img class="fullscreen-img" src="img/fullscreen.svg" onclick="toggleFullScreen()"> </img>
 		</div>
 		<div class="card-container">
 			<div class="card">
 				<h2 class="Weather-text"> Sunshine </h2>
 				<div class="card-text-container">
 					<a href="./auction.html" class="card-text"> Explore </a>
-					<a href="./mode.html" class="card-text2" id="Switch1" > Switch </a>
+					<a href="./mode.html" class="card-text2"> Switch </a>
 				</div>
 				<img src="img/sun.jpg" width="300" height="156"> </img>
 			</div>
@@ -62,7 +63,11 @@
 	</div>
 	</div>
 	<script>
-	var element = do
+	  var goFS = document.getElementById("goFS");
+	  goFS.addEventListener("click", function() {
+	      document.body.requestFullscreen();
+	  }, false);
+	</script>
 	<script src="./js/main.js"> </script>
 </body>
 </html>
