@@ -39,6 +39,7 @@ body,html {
 .fullscreen-img {
   position: absolute;
   left: 96vw;
+  display: none;
 }
 
 .header-text {
@@ -81,8 +82,6 @@ body,html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height:236px;
-  width:300px;
 
 }
 
@@ -92,6 +91,7 @@ body,html {
   top:25vh;
   padding-bottom: 4px;
   align-self: flex-end;
+  margin-left: 11vw;
 }
 
 .card-text2 {
@@ -99,7 +99,7 @@ body,html {
   position: absolute;
   top:25vh;
   padding-bottom: 4px;
-  margin-left: 60px;
+  margin-left: 15vw;
   align-self: flex-end;
 }
 
@@ -140,7 +140,7 @@ a {
 .menutext2 {
   position: absolute;
   z-index: 3;
-  top:10vh;
+  top:9.5vh;
   padding-left: 20px;
   color:#FFF;
 }
@@ -277,7 +277,7 @@ a {
 .degrees3 {
   top: 50vh;
   position: absolute;
-  left: 80vw;
+  left: 88vw;
 }
 
 .slider {
@@ -383,10 +383,6 @@ height:100%;
   margin-right: 12px;
 }
 
-.controls {
-
-}
-
 .pac-controls {
   display: inline-block;
   padding: 5px 11px;
@@ -431,7 +427,7 @@ height:100%;
   border: 1px #2196F3 solid;
   position: absolute;
   z-index: 1;
-  left:30vw;
+  left:46vw;
   top:40vh;
 }
 
@@ -439,7 +435,7 @@ height:100%;
   position: absolute;
   z-index: 1;
   color:#FFF;
-  top:40vh;
+  top:30vh;
   left:46.5vw;
   text-shadow:  0 2px 6px rgba(0, 0, 0, 0.3);
 }
@@ -456,7 +452,7 @@ height:100%;
   cursor: pointer;
 }
 
-.location{
+.location {
   margin-top: 16px;
   margin-left: 16px;
 }
@@ -498,6 +494,7 @@ height:100%;
 
     .fullscreen-img {
       left:70vw;
+      display: inherit;
     }
 
     .snow {
@@ -524,6 +521,15 @@ height:100%;
     .area-text {
       top:30vh;
       left:30vw;
+    }
+
+    .square {
+      left:30vw;
+      top:40vh;
+    }
+
+    .degrees3 {
+      left: 80vw;
     }
 }
 
