@@ -10,36 +10,38 @@
 <body>
 	<div class="container">
 		<div class="menu">
-        <h5 class="menutext"> Noel Ekbrand </h5>
-        <h6 class="menutext2"> noel.ekbrand@itggot.se </h6>
-        <img class="account" src="img/account.svg"> </img>
+        <h5 class="menutext">Noel Ekbrand</h5>
+        <h6 class="menutext2">noel.ekbrand@itggot.se</h6>
+        <img class="account" src="img/account.svg"></img>
         <img class="coverphoto" src="img/cover.jpg">
-          <a href="./index.html">Home</a>
-          <a href="./degrees.html">Degrees</a>
-          <div class="boxline">
-          </div>
+        <a href="./home.html">Home</a>
+        <a href="./degrees.html">Degrees</a>
+        <div class="boxline"></div>
       </div>
-      <div class=shade onclick="menuRemove()"> </div>
+      <div class=shade onclick="menuRemove()"></div>
   	<div class="header">
-			<img class="menu-img" src="img/menu.svg" onclick="menuAnimation()"> </img>
-      <h2 class="header-text"> Weather Switch </h2>
-			<img class="fullscreen-img" src="img/fullscreen.svg" onclick="toggleFullScreen()"> </img>
+			<img class="menu-img" src="img/menu.svg" onclick="menuAnimation()"></img>
+      <h2 class="header-text">Weather Switch</h2>
+			<img class="fullscreen-img" src="img/fullscreen.svg" onclick="toggleFullScreen()"></img>
 		</div>
-    <div class="mode-row">
+    <div class="mode-column">
       <div class="confirm displaynone">
-        <h3 class="confirm-text"> Change weather? </h3>
-        <h3 class="confirm-text"> Personal mode 1 m^2 </h3>
+        <h3 class="confirm-text">Change weather?</h3>
+        <h3 class="confirm-text">Personal mode 1 m^2</h3>
         <div class="confirm-row">
-        <a href="./index.html"> <h3 class="confirm-text"> Confirm  </h3> </a>
-        <a href="#">  <h3 class="confirm-text" onclick="confirmWeather()"> Cancel </h3> </a>
+        	<a href="./home.html"><h3 class="confirm-text">Confirm</h3></a>
+        	<a href="#"><h3 class="confirm-text" onclick="confirmWeather()">Cancel</h3></a>
         </div>
       </div>
-      <img class="mode" src="img/person.svg" width="150" height="150" onclick="removeConfirm()"></img>
-      <a href="#"><h3 onclick="removeConfirm()"> Personal mode </h3></a>
-      <a href="./map.html"><img class="mode" src="img/area.png" width="150" height="150" onclick="removeareaConfirm()"></img></a>
-      <a href="./map.html"><h3 onclick="removeareaConfirm()"> Area mode </h3></a>
+			<div class="mode-row1">
+      	<img class="mode" src="img/person.svg" width="150" height="150" onclick="removeConfirm()"></img>
+      	<a href="./map.html"><img class="mode" src="img/area.png" width="150" height="150" onclick="removeareaConfirm()"></img></a>
+			</div>
+		<div class="mode-row1">
+			<a class="personal-mode" href="#"><h3 onclick="removeConfirm()">Personal mode</h3></a>
+  		<a class="area-mode" href="./map.html"><h3 onclick="removeareaConfirm()">Area mode</h3></a>
     </div>
   </div>
-	<script src="./js/main.js"> </script>
+	<script src="./js/main.js"></script>
 </body>
 </html>

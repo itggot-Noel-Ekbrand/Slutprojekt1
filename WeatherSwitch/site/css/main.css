@@ -1,10 +1,14 @@
 body,html {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  background-color:#E0E0E0;
+  background-color: #E0E0E0;
   overflow-x: hidden;
   overflow-y: hidden;
-  height:100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -15,12 +19,13 @@ body,html {
     background-color: #E0E0E0;
 }
 
+/* Header Klasser start */
 .header {
 	background-color: #2196F3;
   height: 60px;
   width: 100%;
-  color:#FFF;
-  display:flex;
+  color: #FFF;
+  display: flex;
   flex-direction: row;
   align-items: center;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -31,8 +36,8 @@ body,html {
 
 .menu-img {
   padding-left: 1.2em;
-	width:auto;
-  height:36px;
+	width: auto;
+  height: 36px;
   cursor: pointer;
 }
 
@@ -47,8 +52,103 @@ body,html {
   font-size: 20px;
 }
 
+/* Header Klasser end */
+
+/*Menu Klasser start */
+.menu {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  position: fixed;
+  background-color: #FFF;
+  left: -400px;
+  top: 0px;
+  height: 100%;
+  width: 20%;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.23);
+  border-right: solid #95989A 1px;
+}
+
+.menuAnimation {
+  animation: menu 0.15s 1;
+  animation-fill-mode: forwards;
+}
+
+.menutext {
+  position: absolute;
+  z-index: 3;
+  top: 8vh;
+  padding-left: 20px;
+  color: #FFF;
+}
+
+.menutext2 {
+  position: absolute;
+  z-index: 3;
+  top: 9.5vh;
+  padding-left: 20px;
+  color: #FFF;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000;
+  top: 16vh;
+  position: relative;
+  z-index: 3;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+
+.coverphoto {
+  position: absolute;
+  width: 100%;
+  height: 145.4px;
+  padding: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.account {
+  position: absolute;
+  z-index: 3;
+  width: 50px;
+  height: 50px;
+  top: 3.5vh;
+  padding-left: 20px;
+}
+
+.boxline {
+  border-bottom: solid #95989A 1px;
+  width: 100%;
+  height: 200px;
+}
+
+.shade {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  left: 20%;
+  top: -100%;
+  z-index: 2;
+}
+
+.shadeAnimation {
+  animation: shade 0s 1;
+  animation-fill-mode: forwards;
+}
+
+/*Menu Klasser end */
+
+/* Card Klasser start */
 .card-container {
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding: 30px;
@@ -60,8 +160,8 @@ body,html {
 }
 
 .card {
-  height:236px;
-  width:300px;
+  height: 236px;
+  width: 300px;
   background-color: #FFF;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   position: static;
@@ -75,7 +175,7 @@ body,html {
   position: absolute;
   color: #FFF;
   align-self: center;
-  padding:20px;
+  padding: 20px;
 }
 
 .card-text-container {
@@ -88,7 +188,7 @@ body,html {
 .card-text {
   z-index: 1;
   position: absolute;
-  top:25vh;
+  top: 25vh;
   padding-bottom: 4px;
   align-self: flex-end;
   margin-left: 11vw;
@@ -97,132 +197,58 @@ body,html {
 .card-text2 {
   z-index: 1;
   position: absolute;
-  top:25vh;
+  top: 25vh;
   padding-bottom: 4px;
   margin-left: 15vw;
   align-self: flex-end;
 }
 
-a {
-  text-decoration: none;
-}
+/* Card Klasser end */
 
-.menu {
-  display: flex;
-  flex-direction: column;
-  z-index: 2;
-  position: fixed;
-  background-color: #FFF;
-  left:-400px;
-  top:0px;
-  height:100%;
-  width:20%;
-  padding-top:0;
-  padding-left:0;
-  padding-right:0;
-  box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.23);
-  border-right: solid #95989A 1px;
-}
-
-.menuAnimation {
-  animation: menu 0.15s 1;
-  animation-fill-mode: forwards;
-}
-
-.menutext {
-  position: absolute;
-  z-index: 3;
-  top:8vh;
-  padding-left: 20px;
-  color:#FFF;
-}
-
-.menutext2 {
-  position: absolute;
-  z-index: 3;
-  top:9.5vh;
-  padding-left: 20px;
-  color:#FFF;
-}
-
-.menu a {
-  text-decoration: none;
-  color:#000;
-  top: 16vh;
-  position: relative;
-  z-index: 3;
-  cursor: pointer;
-  margin-top: 20px;
-  margin-left: 20px;
-  font-size: 18px;
-}
-
-
-.coverphoto {
-  position:absolute;
-  width:100%;
-  height:145.4px;
-  padding: 0;
-  top:0;
-  z-index: 2;
-}
-
-.account {
-  position: absolute;
-  z-index: 3;
-  width:50px;
-  height: 50px;
-  top:3.5vh;
-  padding-left: 20px;
-}
-
-.boxline {
-  border-bottom: solid #95989A 1px;
-  width:100%;
-  height:200px;
-}
-
-.shade {
-  position: absolute;
-  width:80%;
-  height:100%;
-  left:20%;
-  top:-100%;
-  z-index: 2;
-}
-
-.shadeAnimation {
-  animation: shade 0s 1;
-  animation-fill-mode: forwards;
-}
-
-.mode-row {
+/* Mode Klasser start */
+.mode-column {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
+
+.mode-row1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.area-mode {
+  margin-left: -20px;
+}
+
+.personal-mode {
+  margin-left: -10px;
+}
+
 .mode {
   margin-top: 15vh;
 }
 
 .confirm {
-  width:200px;
-  height:120px;
+  width: 200px;
+  height: 120px;
   background-color: #FFF;
   z-index: 2;
   position: absolute;
-  top:40vh;
+  top: 40vh;
+  left: 45vw;
   border: solid #95989A 1px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 .confirm-area {
-  width:200px;
-  height:120px;
+  width: 200px;
+  height: 120px;
   background-color: #FFF;
   z-index: 1;
   position: absolute;
-  top:40vh;
+  top: 40vh;
+  left: 45vw;
   border: solid #95989A 1px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
@@ -240,9 +266,12 @@ a {
 }
 
 .displaynone {
-  display:none;
+  display: none;
 }
 
+/* Mode Klasser end */
+
+/* Degrees Klasser start */
 .box {
   display: flex;
   flex-direction: row;
@@ -300,9 +329,9 @@ button {
 
 
 input[type=range] {
-  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
-  width: 80%; /* Specific width is required for Firefox. */
-  background: transparent; /* Otherwise white in Chrome */
+  -webkit-appearance: none;
+  width: 80%;
+  background: transparent;
 }
 
 input[type=range]::-webkit-slider-thumb {
@@ -310,20 +339,17 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 input[type=range]:focus {
-  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+  outline: none;
 }
 
 input[type=range]::-ms-track {
   width: 100%;
   cursor: pointer;
-
-  /* Hides the slider so custom styles can be added */
   background: transparent;
   border-color: transparent;
   color: transparent;
 }
 
-/* Special styling for WebKit/Blink */
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   border: 1px solid #2196F3;
@@ -332,8 +358,8 @@ input[type=range]::-webkit-slider-thumb {
   border-radius: 10px;
   background: #2196F3;
   cursor: pointer;
-  margin-top: -6px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
-  box-shadow: 1px 1px 1px #2196F3, 0px 0px 1px #2196F3; /* Add cool effects to your sliders! */
+  margin-top: -6px;
+  box-shadow: 1px 1px 1px #2196F3, 0px 0px 1px #2196F3;
 }
 
 input[type=range]::-webkit-slider-runnable-track {
@@ -346,8 +372,12 @@ input[type=range]::-webkit-slider-runnable-track {
   border: 0.2px solid #FFF;
 }
 
+/* Degrees Klasser end */
+
+/* Map Klasser start */
+
 #map {
-height:100%;
+height: 100%;
 }
 
 #description {
@@ -403,7 +433,7 @@ height:100%;
   padding: 0 11px 0 13px;
   text-overflow: ellipsis;
   width: 180px;
-  height:40px;
+  height: 40px;
 }
 
 #pac-input:focus {
@@ -422,33 +452,33 @@ height:100%;
 }
 
 .square {
-  width:150px;
-  height:150px;
+  width: 150px;
+  height: 150px;
   border: 1px #2196F3 solid;
   position: absolute;
   z-index: 1;
-  left:46vw;
-  top:40vh;
+  left: 46vw;
+  top: 40vh;
 }
 
 .area-text {
   position: absolute;
   z-index: 1;
-  color:#FFF;
-  top:30vh;
-  left:46.5vw;
+  color: #FFF;
+  top: 30vh;
+  left: 46.5vw;
   text-shadow:  0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .FAB {
-  height:56px;
-  width:56px;
+  height: 56px;
+  width: 56px;
   border-radius: 128px;
   background-color: #1976D2;
-  position:fixed;
+  position: fixed;
   z-index: 1;
-  left:93vw;
-  top:87vh;
+  left: 93vw;
+  top: 87vh;
   cursor: pointer;
 }
 
@@ -457,21 +487,23 @@ height:100%;
   margin-left: 16px;
 }
 
+/* Map Klasser end */
+
 @keyframes menu {
   from {
-    left:-400px;
+    left: -400px;
   }
   to {
-    left:0px;
+    left: 0px;
   }
 }
 
 @keyframes shade {
   from {
-    top:-100%;
+    top: -100%;
   }
   to {
-    top:0%;
+    top: 0%;
   }
 }
 
@@ -486,14 +518,14 @@ height:100%;
     }
 
     .menu {
-      width:80%;
+      width: 80%;
     }
     .shade {
-      left:80%;
+      left: 80%;
     }
 
     .fullscreen-img {
-      left:80vw;
+      left: 80vw;
       display: inherit;
     }
 
@@ -520,27 +552,35 @@ height:100%;
     }
 
     .card-text {
-      top:inherit;
-      left:42vw;
+      top: inherit;
+      left: 42vw;
     }
 
     .card-text2 {
-      top:inherit;
+      top: inherit;
       left: 60vw;
     }
 
+    .confirm {
+      left: 25vw;
+    }
+
+    .confirm-area {
+      left: 25vw;
+    }
+
     .FAB {
-      left:70vw;
-      top:85vh;
+      left: 70vw;
+      top: 85vh;
     }
     .area-text {
-      top:30vh;
-      left:30vw;
+      top: 30vh;
+      left: 30vw;
     }
 
     .square {
-      left:30vw;
-      top:40vh;
+      left: 30vw;
+      top: 40vh;
     }
 
     .degrees3 {
@@ -552,7 +592,7 @@ height:100%;
     }
 
     .menutext2 {
-      top:14vh;
+      top: 14vh;
     }
 
     .menu a {
@@ -560,35 +600,30 @@ height:100%;
     }
 
     .account {
-      top:6vh;
+      top: 6vh;
     }
 }
 
 @media screen
- and (min-width : 360px)
- and (orientation:landscape)
-   {
+  and (device-width: 640px)
+  and (device-height: 360px)
+  and (-webkit-device-pixel-ratio: 3)
+  and (orientation: landscape) {
 
-    body,html {
+  body,html {
       overflow-y: scroll;
-      overflow-x: scroll;
-    }
-
-    .header {
-      width:1000px;
     }
 
     .menu {
-      width:80%;
-      left:-600px;
+      width: 80%;
+      left: -600px;
     }
     .shade {
-      left:80%;
-      background-color: red;
+      left: 80%;
     }
 
     .fullscreen-img {
-      left:90vw;
+      left: 90vw;
       display: inherit;
     }
 
@@ -602,9 +637,10 @@ height:100%;
     }
 
     .card-container {
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-between;
-      height: 170vh;
+      flex-wrap: wrap;
+      height: 140vh;
       width: 80vw;
     }
 
@@ -615,50 +651,81 @@ height:100%;
     }
 
     .card {
-      margin-left:20px;
+      margin-right: 20px;
+      margin-left: 0;
+      width: 290px;
+    }
+
+    .card-img {
+      width: 290px;
     }
 
     .card-text {
-      top:inherit;
-      left:42vw;
+      top: inherit;
+      margin-left: 30vw;
     }
 
     .card-text2 {
-      top:inherit;
-      left: 60vw;
+      top: inherit;
+      margin-left: 43vw;
+    }
+
+    .mode-row1 {
+      margin-top: 40px;
+    }
+
+    .confirm {
+      left: 35vw;
+    }
+
+    .confirm-area {
+      left: 35vw;
     }
 
     .FAB {
-      left:70vw;
-      top:85vh;
+      left: 80vw;
+      top: 75vh;
     }
     .area-text {
-      top:30vh;
-      left:30vw;
+      top: 20vh;
+      left: 41vw;
     }
 
     .square {
-      left:30vw;
-      top:40vh;
+      left: 40vw;
+      top: 40vh;
     }
 
     .degrees3 {
-      left: 80vw;
+      left: 84vw;
     }
 
     .menutext {
-      top: 12vh;
+      top: 22vh;
     }
 
     .menutext2 {
-      top:14vh;
+      top: 25vh;
     }
 
     .menu a {
-      top: 24vh;
+      top: 44vh;
     }
 
     .account {
-      top:6vh;
+      top: 10vh;
+    }
+
+    button {
+      top: 70vh;
+    }
+
+    .sun {
+      top: 20vh;
+      left: 80vw;
+    }
+
+    .snow {
+      top: 20vh;
     }
 }
