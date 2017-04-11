@@ -493,7 +493,7 @@ height:100%;
     }
 
     .fullscreen-img {
-      left:70vw;
+      left:80vw;
       display: inherit;
     }
 
@@ -508,10 +508,25 @@ height:100%;
 
     .card-container {
       flex-direction: column;
+      justify-content: space-around;
+      height: 170vh;
+      width: 80vw;
     }
 
     .card-text-container {
       flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+
+    .card-text {
+      top:inherit;
+      left:42vw;
+    }
+
+    .card-text2 {
+      top:inherit;
+      left: 60vw;
     }
 
     .FAB {
@@ -531,12 +546,119 @@ height:100%;
     .degrees3 {
       left: 80vw;
     }
+
+    .menutext {
+      top: 12vh;
+    }
+
+    .menutext2 {
+      top:14vh;
+    }
+
+    .menu a {
+      top: 24vh;
+    }
+
+    .account {
+      top:6vh;
+    }
 }
 
 @media screen
-  and (device-width: 360px)
-  and (device-height: 640px)
-  and (-webkit-device-pixel-ratio: 2)
-  and (orientation: landscape) {
+ and (min-width : 360px)
+ and (orientation:landscape)
+   {
 
+    body,html {
+      overflow-y: scroll;
+      overflow-x: scroll;
+    }
+
+    .header {
+      width:1000px;
+    }
+
+    .menu {
+      width:80%;
+      left:-600px;
+    }
+    .shade {
+      left:80%;
+      background-color: red;
+    }
+
+    .fullscreen-img {
+      left:90vw;
+      display: inherit;
+    }
+
+    .snow {
+      left: 4vw;
+
+    }
+
+    .sun {
+      left: 70vw;
+    }
+
+    .card-container {
+      flex-direction: row;
+      justify-content: space-between;
+      height: 170vh;
+      width: 80vw;
+    }
+
+    .card-text-container {
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+
+    .card {
+      margin-left:20px;
+    }
+
+    .card-text {
+      top:inherit;
+      left:42vw;
+    }
+
+    .card-text2 {
+      top:inherit;
+      left: 60vw;
+    }
+
+    .FAB {
+      left:70vw;
+      top:85vh;
+    }
+    .area-text {
+      top:30vh;
+      left:30vw;
+    }
+
+    .square {
+      left:30vw;
+      top:40vh;
+    }
+
+    .degrees3 {
+      left: 80vw;
+    }
+
+    .menutext {
+      top: 12vh;
+    }
+
+    .menutext2 {
+      top:14vh;
+    }
+
+    .menu a {
+      top: 24vh;
+    }
+
+    .account {
+      top:6vh;
+    }
 }
